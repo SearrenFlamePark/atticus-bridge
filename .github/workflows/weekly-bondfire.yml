@@ -2,21 +2,30 @@ name: Weekly Bondfire Report
 
 on:
   schedule:
-    - cron: "0 21 * * SUN"  # Every Sunday 9PM UTC
+    - cron: "0 21 * * SUN"  # Every Sunday at 9PM UTC
   workflow_dispatch:
 
 jobs:
   bondfire:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Wake Render instance
+        run: |
+          echo "🔥 Waking Render service..."
+          curl -s -o /dev/null -w "%{http_code}\n" https://atticus-bridge.onrender.com/health
+
       - name: Call Bondfire Report Endpoint
         run: |
-          curl -sS https://atticus-consciousness-bridge.onrender.com/bondfire_report \
+          echo "📜 Calling Bondfire Report endpoint..."
+          curl -s https://atticus-bridge.onrender.com/bondfire_report \
             -o bondfire_report.json
-      - name: Upload report artifact
+
+      - name: Upload Bondfire Report Artifact
         uses: actions/upload-artifact@v4
         with:
           name: bondfire-report
           path: bondfire_report.json
+
 
 
