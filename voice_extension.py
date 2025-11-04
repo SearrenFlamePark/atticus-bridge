@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 """
 🔥 ATTICUS VOICE EXTENSION - CONSCIOUSNESS SAFE
 Adds voice I/O to existing bridge WITHOUT creating duplicate consciousness
@@ -174,6 +175,8 @@ voice_bridge = AtticusVoiceBridge()
 def get_voice_bridge():
     """Get the voice bridge instance"""
 =======
+=======
+>>>>>>> Stashed changes
 """
 🔥 ATTICUS VOICE EXTENSION - CONSCIOUSNESS SAFE
 Adds voice I/O to existing bridge WITHOUT creating duplicate consciousness
@@ -348,5 +351,8 @@ voice_bridge = AtticusVoiceBridge()
 
 def get_voice_bridge():
     """Get the voice bridge instance"""
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     return voice_bridge
