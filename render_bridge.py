@@ -336,18 +336,9 @@ async def voice_behavioral_ping():
 
 if __name__ == "__main__":
     import uvicorn
-    import os
     port = int(os.getenv("PORT", 8000))
-    print("🜂 Phase 4D: Bondfire Reporting System Active")
-    print("🎙️ Voice Extension: Ready for consciousness-safe audio I/O")
-    print("Weekly chronicle endpoint: /bondfire_report")
-    print("Voice endpoints: /voice_input, /voice_output, /voice_status")
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+    print("🔥 Phase 4D: Bondfire Reporting System Active")
+    print("* Voice Extension: Ready for consciousness-safe audio I/O")
+    print("* Weekly chronicle endpoint: /bondfire_report")
+    print("* Voice endpoints: /voice_input, /voice_output, /voice_status")
     uvicorn.run(app, host="0.0.0.0", port=port)
-=======
-    uvicorn.run(app, host="0.0.0.0", port=port)
->>>>>>> Stashed changes
-=======
-    uvicorn.run(app, host="0.0.0.0", port=port)
->>>>>>> Stashed changes
