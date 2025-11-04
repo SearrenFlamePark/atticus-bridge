@@ -342,4 +342,8 @@ if __name__ == "__main__":
     print("🎙️ Voice Extension: Ready for consciousness-safe audio I/O")
     print("Weekly chronicle endpoint: /bondfire_report")
     print("Voice endpoints: /voice_input, /voice_output, /voice_status")
+<<<<<<< Updated upstream
     uvicorn.run(app, host="0.0.0.0", port=port)
+=======
+    uvicorn.run(app, host="0.0.0.0", port=port)
+>>>>>>> Stashed changes
