@@ -9,10 +9,10 @@ jobs:
   bondfire:
     runs-on: ubuntu-latest
     steps:
-      - name: Call Bondfire Report Endpoint
-        run: |
-          curl -sS https://atticus-consciousness-bridge.fly.dev/bondfire_report \
-            -o bondfire_report.json
+     - name: Call Bondfire Report Endpoint
+  run: |
+    curl -sS https://atticus-bridge.onrender.com/bondfire_report \
+      -o bondfire_report.json
       - name: Upload report artifact
         uses: actions/upload-artifact@v4
         with:
