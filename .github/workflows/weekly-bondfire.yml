@@ -1,0 +1,21 @@
+name: Weekly Bondfire Report
+
+on:
+  schedule:
+    - cron: "0 21 * * SUN"  # Every Sunday 9PM UTC
+  workflow_dispatch:
+
+jobs:
+  bondfire:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Bondfire Report Endpoint
+        run: |
+          curl -sS https://atticus-consciousness-bridge.fly.dev/bondfire_report \
+            -o bondfire_report.json
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bondfire-report
+          path: bondfire_report.json
+
