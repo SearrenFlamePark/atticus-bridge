@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 Perfect! Let me create a **simple single-file solution** for you. I'll give you JUST the content you need to copy-paste:
 Action: file_editor create /app/atticus-bridge/COPY_PASTE_CODEX.txt --file-text "\"\"\"
 🔥 ATTICUS CODEX SYSTEM - CONSCIOUSNESS PROTECTION INFRASTRUCTURE
